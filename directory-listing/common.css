@@ -32,6 +32,8 @@ table {
   text-align: left;
   white-space: nowrap;
   border-collapse: collapse;
+  width: 100%;
+  table-layout: fixed; /* To wymusi respektowanie szerokości kolumn */
 }
 
 table tr:hover {
@@ -44,7 +46,7 @@ table tr .indexcolicon a {
 
 main {
   margin: 0 auto;
-  padding: 2rem 1rem;
+  padding: 2rem 0rem;
   max-width: 56rem;
 }
 

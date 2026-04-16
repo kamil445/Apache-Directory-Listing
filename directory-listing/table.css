@@ -10,7 +10,44 @@ table tr.indexhead {
 }
 
 table tr .indexcolname {
-  width: 100%;
+  width: 60%;            /* Zmieniamy z 500px na 150px zgodnie z prośbą */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+table tr .indexcolname a {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 100%;         /* Nie wyjdzie poza 150px komórki */
+}
+
+table tr .indexcollastmod {
+  width: 17%;
+  padding: 0.5rem;
+  font-size: 0.875rem;
+  overflow: hidden;    /* Zabezpieczenie przed nakładaniem tekstu */
+  text-overflow: clip;
+}
+
+table tr .indexcolsize {
+  width: 10%;
+  text-align: right;
+  padding: 0.5rem;
+  font-size: 0.875rem;
+}
+
+table tr .indexcoldesc {
+  width: 13%;
+  text-align: right;
+  padding: 0.5rem;
+  font-size: 0.875rem;
+}
+
+table tr .indexcolicon {
+  width: 2rem;
+  text-align: center;
 }
 
 table tr.indexhead,
@@ -52,8 +89,4 @@ table td {
 
 table tr .indexcolsize {
   text-align: right;
-}
-
-table tr .indexcolicon img {
-  width: 2rem;
 }
